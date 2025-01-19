@@ -2,8 +2,6 @@
 let users = document.getElementsByClassName('Users')[0];
 let posts = document.getElementsByClassName('posts')[0];
 
-
-// Fonction pour récupérer les utilisateurs depuis l'API JSONPlaceholder
 function getUsersFromAPI() {
     new Promise((resolve)=>{
         axios.get('https://jsonplaceholder.typicode.com/users')
@@ -27,7 +25,6 @@ function getUsersFromAPI() {
         
         let userElements = document.querySelectorAll('.user');
         for(let userData of usersData){
-             // Déplacer cette partie ici pour s'assurer que les éléments existent dans le DOM
          userElements.forEach(userElement => {
              userElement.addEventListener('click', () => {
                  let userId = userElement.id;
