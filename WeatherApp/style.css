@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #222, #444); /* Dégradé plus subtil pour l'arrière-plan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    padding: 40px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre portée pour un effet 3D */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation lors du survol */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.card .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card input {
+    background-color: #fff;
+    width: 70%;
+    color: #333;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #5b548a; /* Bordure fine avec un accent sur la couleur principale */
+    transition: border-color 0.3s;
+}
+
+.card input:focus {
+    border-color: #5b548a; /* Change la couleur de la bordure au focus */
+}
+
+.card .search .iconSearch {
+    color: #5b548a;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 2px solid #5b548a;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card .search .iconSearch:hover {
+    background-color: #5b548a;
+    color: #fff;
+}
+
+.weather {
+    width: 100%;
+}
+
+.weather .weatherIcon {
+    width: 150px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.weather .weatherIcon:hover {
+    transform: scale(1.1); 
+}
+
+.weather h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #fff;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.details .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.details p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.details .containerImg {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #5b548a;
+}
+
+.details img {
+    width: 60px;
+    border-radius: 50%;
+}

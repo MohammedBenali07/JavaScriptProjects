@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Mes Taches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inputs">
+        <label for="text">Enter Votre Tache:</label>
+        <input type="text" name="text" id="text" placeholder="Enter la tache ici...">
+        <button id="add">Ajouter</button>
+    </div>
+    <div class="outputs">
+        <div class="Partie_haute">
+            <div id="AddTache"></div>
+            <p>Mes Taches</p>
+            <button id="plus"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="Partie_bas">
+            <div id="tache-date">
+                <p id="p">La lecture d'un livre</p>
+            <div class="date">
+                <button id="calender"><i class="fa-solid fa-calendar-days"></i></button>
+                <span>15/10/2022</span>
+            </div>
+            </div>
+            <div class="icons">
+                <button id="trash"><i class="fa-solid fa-trash"></i></button>
+                <button id="check"><i class="fa-solid fa-check"></i></button>
+                <button id="pen"><i class="fa-solid fa-pen"></i></button>
+            </div>
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

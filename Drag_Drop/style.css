@@ -1,0 +1,58 @@
+body {
+    background-color: #f2f2f2; 
+    font-family: sans-serif;
+}
+
+main {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: min-content;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container {
+    height: 15rem;
+    width: 15.5rem;
+    border: 2px dotted #90caf9; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    background-color: #e3f2fd; 
+    border-radius: 0.5rem; 
+}
+
+.draggable {
+    height: 3rem;
+    width: 15rem;
+    background-color: #ffab91; 
+    color: #37474f; 
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-left: 0.5rem;
+    cursor: move;
+    border-radius: 0.25rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+.draggable:hover {
+    transform: scale(1.05); 
+}
+
+@media screen and (min-width: 45rem) {
+    main {
+        flex-direction: row;
+    }
+}
+
+.dragging {
+    opacity: 0.6; 
+    transform: rotate(-3deg); 
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #B2FEFA, #0ED2F7);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  display: block;
+  background: #fff;
+  padding: 18px;
+  user-select: none;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #F58F29;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-list .card-link .badge {
+  color: #F58F29;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  background: #FFE7D9;
+  margin: 16px 0 18px;
+}
+
+.card-list .card-link .badge-designer {
+  color: #D9368E;
+  background: #FFD8EC;
+}
+
+.card-list .card-link .badge-marketer {
+  color: #D97706;
+  background: #FFF4E5;
+}
+
+.card-list .card-link .badge-gamer {
+  color: #166534;
+  background: #D9FBE5;
+}
+
+.card-list .card-link .badge-editor {
+  color: #92400E;
+  background: #FEF3C7;
+}
+
+.card-list .card-link .card-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card-list .card-link .card-button {
+  height: 40px;
+  width: 40px;
+  color: #F58F29;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #F58F29;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #F58F29;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.6;
+  background: #F58F29;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #F58F29;
+  margin-top: -35px;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}

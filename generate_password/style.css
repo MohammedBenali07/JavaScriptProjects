@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #191832;
+    padding: 40px 20px;
+}
+.container{
+    padding: 10px 5px;
+    width: 40%;
+    height: auto;
+}
+.container h2{
+    font-size: 24px;
+    color: white;
+}
+.container h2 span{
+    color: #0b910b;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0b910b;
+}
+.input-copy{
+    margin: 10px 0px 20px 0px;
+    background-color: #fff;
+    padding: 10px 5px;
+    position: relative;
+}
+.input-copy input{
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    width: 85%;
+    text-overflow: ellipsis;
+}
+.input-copy i{
+    color: #0b910b;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
+}
+.container button{
+    padding: 15px 10px;
+    background-color: #036503;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    border: 2px solid #036503;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.container button:hover{
+    color: #036503;
+    background-color: #fff;
+}
+#succesCopy{
+    margin-top: 10px;
+    color: #a3e0a3;
+    display: none;
+    
+}
+#succesCopy.style{
+    display: inline-block;
+    
+}
+
+
+
+
